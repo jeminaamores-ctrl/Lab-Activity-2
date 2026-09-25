@@ -1,23 +1,14 @@
 public class Main{
     public static void main(String[] args){
 
-        Vehicles v1 = new Vehicles();
-        v1.brand = "Tesla";
-        v1.model = "Model 3";
-        v1.year = 2022;
-        
+        Vehicle v1 = new Vehicle("Tesla", "Model 3", 2022);
+        v1.displayInfo();
 
-        Vehicles v2 = new Vehicles();
-        v2.brand = "Toyota";
-        v2.model = "Camry";
-        v2.year = 2008;
+        Vehicle v2 = new Vehicle("Toyota", "Camry", 2008);
         v2.displayInfo();
 
-        Vehicles v3 = new Vehicles();
-        v3.brand = "Ford";
-        v3.model = "Mustang";
-        v3.year = 1967;
-        v2.displayInfo();
+        Vehicle v3 = new Vehicle("Ford", "Mustang", 1967);
+        v3.displayInfo();
 
         v1.displayInfo();
         System.out.println("Age: " + v1.calculateAge());
