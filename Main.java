@@ -2,9 +2,9 @@ public class Main {
 
 public static void main(String[] args) {
 
-Vehicle v1 = new Vehicle("Land Rover","Defender", 2020);
-Vehicle v2 = new Vehicle("Toyota","Corolla", 1995);
-Vehicle v3 = new Vehicle("BMW","Sedan", 2018);
+Vehicle v1 = new Vehicle("Tesla","Model 3", 2022);
+Vehicle v2 = new Vehicle("Toyota","Camry", 2008);
+Vehicle v3 = new Vehicle("Ford","Mustang", 1967);
 
 //object1 
 v1.displayInfo();
