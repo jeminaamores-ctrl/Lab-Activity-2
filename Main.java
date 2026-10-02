@@ -2,11 +2,11 @@ public class Main {
 
 public static void main(String[] args) {
 
-Vehicle v1 = new Vehicle("Tesla","Model 3", 2022);
-Vehicle v2 = new Vehicle("Toyota","Camry", 2008);
-Vehicle v3 = new Vehicle("Ford","Mustang", 1967);
+Vehicle v1 = new Vehicle("Tesla", "Model 3", 2022);
+Vehicle v2 = new Vehicle("Toyota", "Camry", 2008);
+Vehicle v3 = new Vehicle("Ford", "Mustang", 1967);
 
-//object1 
+//object1
 v1.displayInfo();
 System.out.println("Brand: " + v1.getBrand());
 System.out.println("Model: " + v1.getModel());
@@ -34,7 +34,7 @@ System.out.println("Is vintage? " + v3.isVintage());
 System.out.println();
 
 //set (test)
-System.out.println("setYear(2000): " + v1.setYear(2000));
+System.out.println("setYear(2022): " + v1.setYear(2022));
 System.out.println("Year: " + v1.getYear());
 System.out.println("Age: " + v1.calculateAge());
 System.out.println("Is vintage? " + v1.isVintage());
@@ -49,16 +49,16 @@ System.out.println("Year: " + v1.getYear());
 System.out.println();
 
 //test
-Vehicle v4 = new Vehicle("Land Rover", "Defender", 1885); 
-System.out.println("New vehicle with year 1885"); 
-System.out.println("Initial year is " + v4.getYear()); 
-System.out.println(); 
+Vehicle v4 = new Vehicle("Tesla", "Model 3", 1885);
+System.out.println("New vehicle with year 1885");
+System.out.println("Initial year is " + v4.getYear());
+System.out.println();
 
-Vehicle v5 = new Vehicle("Land Rover", "Defender", 2027);
+Vehicle v5 = new Vehicle("Tesla", "Model 3", 2027);
 System.out.println("New vehicle with year 2027");
 System.out.println("Initial year is " + v5.getYear());
 
 
 
-} 
-  }
+}
+}
