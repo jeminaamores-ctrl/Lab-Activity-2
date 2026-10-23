@@ -1,39 +1,64 @@
 public class Main {
 
-    public static void printDetails(Vehicle vehicle) {
-        vehicle.displayInfo();
-    }
-    public static void main(String[] args) {
-        // DEMO 1: A parent reference can refer to a child object.
-        System.out.println("=== 1. Parent Reference ===");
-        Vehicle vehicle = new Car ("Tesla", "Model 3", 2022, 4);
-        vehicle.displayInfo();
-        System.out.println();
+public static void main(String[] args) {
 
-        // The Same Variable now Refer to a Motorcycle Object.
-        vehicle = new Motorcycle("Honda", "Click 125i", 2024, "4-stroke, SOHC, single-cylinder");
-        vehicle.displayInfo();
+Vehicle v1 = new Vehicle("Tesla", "Model 3", 2022);
+Vehicle v2 = new Vehicle("Toyota", "Camry", 2008);
+Vehicle v3 = new Vehicle("Ford", "Mustang", 1967);
 
-        // DEMO 2: One Method accepts different Vehicle subclasses
-        System.out.println("\n === 2. Method Parameter ===");
-        Car car = new Car ("Tesla", "Model 3", 2022, 4);
-        Motorcycle motorcycle = new Motorcycle("Honda", "Beat", 2023, "4-stroke, SOHC, single-cylinder");
-        Truck truck = new Truck("Mercedes-Benz", "Actros", 2024, 10);
-        printDetails(car);
-        printDetails(motorcycle);
-        printDetails(truck);
+//object1
+v1.displayInfo();
+System.out.println("Brand: " + v1.getBrand());
+System.out.println("Model: " + v1.getModel());
+System.out.println("Year: " + v1.getYear());
+System.out.println("Age: " + v1.calculateAge());
+System.out.println("Is vintage? " + v1.isVintage());
+System.out.println();
 
-    // DEMO 3: One array holds different Vehicle subclasses
-    System.out.println("\n === 3. Polymorphic Array ===");
-    Vehicle[] vehicles = {
-        new Car("Toyota", "Vios", 2024, 4),
-        new Motorcycle("Yamaha", "NMAX 155", 2024, "4-stroke, SOHC, liquid-cooled, single-cylinder"),
-        new Truck("Hyundai", "Mighty", 2024, 6)
-    };
+//object2
+v2.displayInfo();
+System.out.println("Brand: " + v2.getBrand());
+System.out.println("Model: " + v2.getModel());
+System.out.println("Year: " + v2.getYear());
+System.out.println("Age: " + v2.calculateAge());
+System.out.println("Is vintage? " + v2.isVintage());
+System.out.println();
 
-    for(Vehicle currentVehicle: vehicles){
-        printDetails(currentVehicle);
-        System.out.println();
-    }
+//object3
+v3.displayInfo();
+System.out.println("Brand: " + v3.getBrand());
+System.out.println("Model: " + v3.getModel());
+System.out.println("Year: " + v3.getYear());
+System.out.println("Age: " + v3.calculateAge());
+System.out.println("Is vintage? " + v3.isVintage());
+System.out.println();
+
+//set (test)
+System.out.println("setYear(2022): " + v1.setYear(2022));
+System.out.println("Year: " + v1.getYear());
+System.out.println("Age: " + v1.calculateAge());
+System.out.println("Is vintage? " + v1.isVintage());
+System.out.println();
+
+System.out.println("setYear(1885): " + v1.setYear(1885));
+System.out.println("Year: " + v1.getYear());
+System.out.println();
+
+System.out.println("setYear(2027): " + v1.setYear(2027));
+System.out.println("Year: " + v1.getYear());
+System.out.println();
+
+//test
+Vehicle v4 = new Vehicle("Tesla", "Model 3", 1885);
+System.out.println("New vehicle with year 1885");
+System.out.println("Initial year is " + v4.getYear());
+System.out.println();
+
+Vehicle v5 = new Vehicle("Tesla", "Model 3", 2027);
+System.out.println("New vehicle with year 2027");
+System.out.println("Initial year is " + v5.getYear());
+
+
+
 }
 }

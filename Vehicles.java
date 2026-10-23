@@ -21,7 +21,7 @@ public String getBrand(){
 public String getModel(){
     return model;
 }
-public boolean setYear(int year){  
+public boolean setYear(int year){   
     if(year >= 1886){
     this.year = year;
     return true;
@@ -35,7 +35,7 @@ public int getYear(){
 
 public void displayInfo() {
 System.out.println(brand + ":\t" + model + " " + year + " ");
-}
+} 
 
 public int calculateAge() {
 return 2026 - year;
