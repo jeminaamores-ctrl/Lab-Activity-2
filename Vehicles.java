@@ -1,4 +1,4 @@
-public class Vehicle {
+public abstract class Vehicles {
 
 private String brand;
 private String model;
@@ -14,6 +14,11 @@ if (year >= 1886 && year <= 2026){
 }
 
 }
+
+public abstract void moveForward();
+public abstract void moveBackward();
+public abstract void moveLeft();
+public abstract void moveRight();
 
 public String getBrand(){
     return brand;
