@@ -1,3 +1,5 @@
+package vehicles;
+
 public abstract class Vehicles {
 
 private String brand;
