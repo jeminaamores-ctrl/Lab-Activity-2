@@ -1,6 +1,17 @@
+package app;
+
+import Contracts.Serviceable;
+import Devices.Printer;
+import Vehicles.Car;
+import Vehicles.Motorcycle;
+import Vehicles.Truck;
+import Vehicles.Vehicle;
+
+
 public class Main {
 
-    public static void printDetails(Vehicle vehicle) {
+
+    public static void printDetails(Vehicles vehicle) {
         vehicle.displayInfo();
     }
     public static void performService(Serviceable item){
