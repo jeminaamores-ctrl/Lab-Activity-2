@@ -1,4 +1,4 @@
-public class Motorcycle extends Vehicle {
+public class Motorcycle extends Vehicle implements Serviceable{
 private String EngineType;
 
    public Motorcycle(String brand, String model, int year, String engineType){
@@ -29,5 +29,9 @@ private String EngineType;
       @Override
     public void moveRight() {
         System.out.println("Motorcycle moves right.");
+    }
+      @Override
+    public void service(){
+        System.out.println("Inspect tires and brakes");
     }
    }
