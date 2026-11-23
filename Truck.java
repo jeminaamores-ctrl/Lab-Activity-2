@@ -10,4 +10,25 @@ private int numberofWheels;
          super.displayInfo();
          System.out.println("Number of wheels: " + numberofWheels);
       }
+
+      @Override
+    public void moveForward() {
+        System.out.println("Truck moves forward.");
+    }
+
+      @Override
+    public void moveBackward() {
+        System.out.println("Truck moves backward.");
+    }
+
+      @Override
+    public void moveLeft() {
+        System.out.println("Truck moves left.");
+    }
+
+      @Override
+    public void moveRight() {
+        System.out.println("Truck moves right.");
+    }
+       
    }
